@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -591,4 +597,17 @@ section {
 .checkbox-wrapper input:checked + label::after,
 .radio-wrapper input::checked + label::after {
     content: "";
+}
+
+div {
+    --favorite-color: blue;
+    color: var(--favorite-color);
+    box-shadow: 5px 5px 10px var(--favorite-color);
+}
+
+div {
+    --size-small: 12px;
+    --size-big: 50px;
+    font-size: var(--size-small);
+    margin: var(--size-big) var(--size-small);
 }
